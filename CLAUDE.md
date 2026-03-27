@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Static one-page website for **Elektromontag Autóvillamossági Szerviz** — an auto electrical workshop in Budapest, XX. district (Pesterzsébet), operating since 1990. Hungarian only, no CMS.
+Static one-page website for **Elektromontag Autóvillamossági Szerviz** — an auto electrical workshop in Budapest, XX. district (Pesterzsébet), operating since 1990. Hungarian only, no CMS. Dark theme with amber/orange accents.
 
 ## Commands
 
@@ -14,19 +14,32 @@ Static one-page website for **Elektromontag Autóvillamossági Szerviz** — an 
 
 ## Architecture
 
-**Tech stack:** Astro (static output), vanilla CSS with custom properties, no JS framework.
+**Tech stack:** Astro (static output), Tailwind CSS v4 + vanilla CSS custom properties, no JS framework.
 
 **Structure:**
 - `src/pages/index.astro` — Single page, composes all section components
 - `src/layouts/Layout.astro` — HTML shell with meta tags, SEO, LocalBusiness JSON-LD schema
-- `src/components/` — One component per page section: Header, Hero, Services, About, Reviews, Contact, Footer
-- `src/styles/global.css` — Design tokens (CSS custom properties), reset, utility classes
-- `public/` — Static assets (favicon.svg, fonts)
-- `astro.config.mjs` — Site config, domain: elektromontag.hu
+- `src/components/` — One component per page section: Header, Hero, Services, About, Reviews, Contact, Footer, ScrollReveal
+- `src/styles/global.css` — Tailwind import, CSS custom properties (theme colors, spacing, typography), utility classes
+- `src/assets/logo/logo.svg` — V2 logo source (circle + bolt + sparks)
+- `public/` — Static assets (favicon.svg, images/)
+- `nginx/default.conf` — Nginx config for Docker deployment
+- `docker-compose.yml` — Docker deployment with deploy sidecar + nginx container
+- `astro.config.mjs` — Site config with Tailwind vite plugin, domain: elektromontag.hu
 
-**Design system:** CSS custom properties defined in `global.css` — colors (`--color-primary`: dark blue, `--color-accent`: amber/orange), spacing scale, typography (Inter font), shadows, radii. Mobile-first responsive with 768px breakpoint.
+**Design system:** Dark theme — background `#1a1d21`, alt `#22262b`, accent `#f59e0b` (amber). CSS custom properties in `global.css` `:root`. Inter font. 768px mobile breakpoint.
 
-**SEO:** LocalBusiness/AutoRepair JSON-LD in Layout.astro, Open Graph meta tags, canonical URLs. Target keywords: autóvillamosság Budapest, autóvillamossági szerviz XX. kerület.
+**SEO:** LocalBusiness/AutoRepair JSON-LD in Layout.astro, Open Graph meta tags, canonical URLs. Keyword strategy in `SEO-KULCSSZAVAK.md`.
+
+## Deployment
+
+Docker-based deployment on Hostinger VPS (72.61.95.59):
+- `elektromontag-deploy` container clones repo and copies dist/ to shared volume
+- `elektromontag-web` nginx container serves static files on port 8080
+- Nginx Proxy Manager on VPS handles domain routing and SSL
+- `dist/` is committed to repo (required for Docker deployment)
+
+Deploy process: build locally → push to GitHub → clean VPS volumes → redeploy via Hostinger API. See TODO.md for detailed steps.
 
 ## Key Business Data
 
@@ -37,6 +50,6 @@ Contact and service details are hardcoded in components (no CMS). If business in
 - `Layout.astro` — JSON-LD structured data
 - `Header.astro` — CTA phone link
 
-## Language
+## Tone
 
-All content is in Hungarian. No i18n setup.
+All content is in Hungarian, **tegező** (informal) tone. "Hívj" not "Hívjon", "Keress" not "Keressen".
