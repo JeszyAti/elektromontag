@@ -1,5 +1,5 @@
-# build output
-dist/
+# build output (dist/ tracked for Docker deployment)
+# dist/
 # generated types
 .astro/
 
