@@ -4,7 +4,7 @@ services:
     container_name: elektromontag-web
     restart: unless-stopped
     ports:
-      - "127.0.0.1:8080:80"
+      - "8080:80"
     volumes:
       - site-data:/usr/share/nginx/html:ro
       - nginx-conf:/etc/nginx/conf.d:ro
