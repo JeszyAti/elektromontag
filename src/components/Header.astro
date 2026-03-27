@@ -171,14 +171,15 @@ const navLinks = [
       justify-content: center;
       align-items: center;
       gap: var(--spacing-2xl);
-      background-color: var(--color-bg-dark);
-      opacity: 0;
+      background: #0d0f11;
+      z-index: 100;
+      transform: translateY(-100%);
       visibility: hidden;
-      transition: all 0.3s;
+      transition: transform 0.3s ease, visibility 0.3s;
     }
 
     .header__nav.is-open {
-      opacity: 1;
+      transform: translateY(0);
       visibility: visible;
     }
 
