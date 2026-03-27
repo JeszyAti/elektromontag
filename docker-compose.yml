@@ -1,14 +1,4 @@
 services:
-  web:
-    image: nginx:alpine
-    container_name: elektromontag-web
-    restart: unless-stopped
-    ports:
-      - "8080:80"
-    volumes:
-      - site-data:/usr/share/nginx/html:ro
-      - nginx-conf:/etc/nginx/conf.d:ro
-
   deploy:
     image: alpine/git
     container_name: elektromontag-deploy
@@ -21,12 +11,25 @@ services:
       - |
         rm -rf /tmp/repo
         git clone --depth 1 https://github.com/JeszyAti/elektromontag.git /tmp/repo
-        rm -rf /site/*
+        rm -rf /site/* /site/.[!.]* 2>/dev/null
         cp -r /tmp/repo/dist/* /site/
-        rm -rf /nginx/*
+        rm -rf /nginx/* /nginx/.[!.]* 2>/dev/null
         cp -r /tmp/repo/nginx/* /nginx/
         rm -rf /tmp/repo
         echo "Deploy complete"
+
+  web:
+    image: nginx:alpine
+    container_name: elektromontag-web
+    restart: unless-stopped
+    depends_on:
+      deploy:
+        condition: service_completed_successfully
+    ports:
+      - "8080:80"
+    volumes:
+      - site-data:/usr/share/nginx/html:ro
+      - nginx-conf:/etc/nginx/conf.d:ro
 
 volumes:
   site-data:

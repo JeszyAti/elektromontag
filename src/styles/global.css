@@ -183,6 +183,11 @@ button {
 }
 
 @media (max-width: 768px) {
+  .btn {
+    white-space: normal;
+    text-align: center;
+  }
+
   .btn--large {
     padding: var(--spacing-sm) var(--spacing-lg);
     font-size: var(--font-size-base);
