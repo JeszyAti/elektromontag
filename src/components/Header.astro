@@ -129,7 +129,8 @@ const navLinks = [
     flex-direction: column;
     gap: 5px;
     padding: var(--spacing-xs);
-    z-index: 101;
+    z-index: 10000;
+    position: relative;
   }
 
   .header__hamburger-line {
@@ -165,22 +166,21 @@ const navLinks = [
       position: fixed;
       top: 0;
       left: 0;
-      right: 0;
-      bottom: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      min-height: 100dvh;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: var(--spacing-2xl);
       background: #0d0f11;
-      z-index: 100;
-      transform: translateY(-100%);
-      visibility: hidden;
-      transition: transform 0.3s ease, visibility 0.3s;
+      z-index: 9999;
+      display: none;
     }
 
     .header__nav.is-open {
-      transform: translateY(0);
-      visibility: visible;
+      display: flex;
     }
 
     .header__nav-list {
