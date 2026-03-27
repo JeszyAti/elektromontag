@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 50">
+  <!-- V2: Villám + csavarhúzó kombinált ikon körben + szöveg -->
+  <g>
+    <!-- Circle bg -->
+    <circle cx="25" cy="25" r="23" fill="#22262b" stroke="#f59e0b" stroke-width="2"/>
+    <!-- Lightning bolt as main element -->
+    <path d="M29 7L17 26h8l-2 17 14-20h-8l2-16z" fill="#f59e0b"/>
+    <!-- Small spark lines -->
+    <line x1="36" y1="12" x2="40" y2="9" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="38" y1="18" x2="43" y2="17" stroke="#f59e0b" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+
+    <!-- Text -->
+    <text x="56" y="20" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="800" fill="#e0ded8" letter-spacing="1">ELEKTROMONTAG</text>
+    <line x1="56" y1="27" x2="130" y2="27" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="56" y="40" font-family="Inter, system-ui, sans-serif" font-size="8.5" font-weight="500" fill="#9ca3af" letter-spacing="3.5">AUTÓVILLAMOSSÁGI SZERVIZ</text>
+  </g>
+</svg>
