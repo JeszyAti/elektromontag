@@ -1,0 +1,133 @@
+---
+const stats = [
+  { value: '35+', label: 'év tapasztalat' },
+  { value: '220+', label: 'pozitív vélemény' },
+  { value: '4', label: 'fős szakértő csapat' },
+  { value: '3.5t', label: 'max. össztömeg' },
+];
+---
+
+<section class="section section--alt" id="rolunk">
+  <div class="container">
+    <div class="section__header reveal">
+      <h2 class="section__title">Rólunk</h2>
+      <p class="section__subtitle">Megbízhatóság és szakértelem 1990 óta</p>
+    </div>
+
+    <div class="about__content reveal">
+      <div class="about__text">
+        <p>
+          Az <strong>Elektromontag</strong> 1990 óta szolgálja ki ügyfeleit Budapest XX. kerületében,
+          Pesterzsébeten. Műhelyünk a <strong>Mártonffy utca 46.</strong> szám alatt található.
+        </p>
+        <p>
+          4 fős, tapasztalt csapatunk szinte minden autóvillamossági problémát megold — legyen szó
+          egyszerű izzócseréről, komplex hibakeresésről, klímajavításról vagy vonóhorog bekötésről.
+          Személygépjárműveket és kishaszongépjárműveket egyaránt vállalunk, <strong>3,5 tonnás össztömegig</strong>.
+        </p>
+        <p>
+          Munkánk minőségét ügyfeleink véleményei igazolják: több mint 220 pozitív értékelés,
+          és sok visszajáró ügyfelünk van, akik már évtizedek óta bíznak bennünk.
+        </p>
+
+        <div class="about__award">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 15l-3.5 2 .67-3.89L6 10.11l3.94-.57L12 6l2.06 3.54 3.94.57-3.17 3L15.5 17z"/>
+          </svg>
+          <div>
+            <strong>Arany Vállalkozás Díj</strong> nyertes
+          </div>
+        </div>
+      </div>
+
+      <div class="about__stats">
+        {stats.map(stat => (
+          <div class="stat-card">
+            <span class="stat-card__value">{stat.value}</span>
+            <span class="stat-card__label">{stat.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: start;
+  }
+
+  .about__text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    color: var(--color-text);
+  }
+
+  .about__award {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    background-color: var(--color-accent-bg);
+    border-radius: var(--radius-lg);
+    margin-top: var(--spacing-md);
+  }
+
+  .about__award svg {
+    color: var(--color-accent);
+    flex-shrink: 0;
+  }
+
+  .about__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-xl);
+    background-color: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    text-align: center;
+  }
+
+  .stat-card__value {
+    font-size: var(--font-size-4xl);
+    font-weight: 800;
+    color: var(--color-accent);
+    line-height: 1;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .stat-card__label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .about__content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-2xl);
+    }
+
+    .about__stats {
+      order: -1;
+    }
+
+    .stat-card__value {
+      font-size: var(--font-size-3xl);
+    }
+  }
+</style>

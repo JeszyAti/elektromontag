@@ -1,0 +1,116 @@
+---
+const reviews = [
+  {
+    name: 'László G.',
+    text: 'Gyors, precíz és hihetetlenül profi szakemberek. Már több mint 20 éve járok hozzájuk, mindig megoldják a problémát.',
+    rating: 5,
+  },
+  {
+    name: 'Andrea M.',
+    text: 'Rendkívül barátságos kiszolgálás. A generátoromat más szerviz nem tudta megjavítani, itt azonnal kiderítették a hibát és meg is javították.',
+    rating: 5,
+  },
+  {
+    name: 'Péter K.',
+    text: 'Izzócserére mentem be, 5 perc alatt megcsinálták, nagyon korrekt áron. Legközelebb is ide jövök!',
+    rating: 5,
+  },
+  {
+    name: 'Zoltán T.',
+    text: 'A klímafeltöltést gyorsan és precízen elvégezték. Szakértő csapat, reális árak. Csak ajánlani tudom mindenkinek!',
+    rating: 5,
+  },
+];
+---
+
+<section class="section" id="velemenyek">
+  <div class="container">
+    <div class="section__header reveal">
+      <h2 class="section__title">Ügyfeleink mondták</h2>
+      <p class="section__subtitle">220+ pozitív vélemény — köszönjük a bizalmat!</p>
+    </div>
+
+    <div class="reviews__grid reveal">
+      {reviews.map(review => (
+        <div class="review-card">
+          <div class="review-card__stars" aria-label={`${review.rating} csillagos értékelés`}>
+            {Array.from({ length: review.rating }).map(() => (
+              <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+            ))}
+          </div>
+          <blockquote class="review-card__text">
+            &ldquo;{review.text}&rdquo;
+          </blockquote>
+          <cite class="review-card__author">{review.name}</cite>
+        </div>
+      ))}
+    </div>
+
+    <div class="reviews__cta">
+      <a
+        href="https://www.google.com/maps/place/Elektromontag+aut%C3%B3villamoss%C3%A1gi+szerviz/@47.4245,19.0965,17z/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn--outline"
+      >
+        Összes vélemény megtekintése a Google-on
+        <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor" aria-hidden="true">
+          <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+          <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .reviews__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .review-card {
+    background-color: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    transition: box-shadow 0.2s;
+  }
+
+  .review-card:hover {
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.08);
+    border-color: rgba(245, 158, 11, 0.3);
+  }
+
+  .review-card__stars {
+    display: flex;
+    gap: 2px;
+    color: var(--color-accent);
+  }
+
+  .review-card__text {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--color-text);
+    font-style: normal;
+    flex-grow: 1;
+  }
+
+  .review-card__author {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-accent);
+    font-style: normal;
+  }
+
+  .reviews__cta {
+    text-align: center;
+  }
+</style>

@@ -1,0 +1,92 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="hu_HU" />
+    <meta property="og:url" content={canonicalURL} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>{title}</title>
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Elektromontag Autóvillamossági Szerviz",
+      "description": "Autóvillamossági szerviz Budapest XX. kerületében. Önindító javítás, generátor javítás, klímajavítás, hibakód olvasás, akkumulátor értékesítés. 1990 óta.",
+      "url": "https://elektromontag.hu",
+      "telephone": ["+3612857596", "+36309624858"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mártonffy utca 46.",
+        "addressLocality": "Budapest",
+        "addressRegion": "Pesterzsébet",
+        "postalCode": "1205",
+        "addressCountry": "HU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 47.442852,
+        "longitude": 19.120346
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Friday",
+          "opens": "08:00",
+          "closes": "16:00"
+        }
+      ],
+      "foundingDate": "1990",
+      "areaServed": {
+        "@type": "City",
+        "name": "Budapest"
+      },
+      "priceRange": "$$",
+      "currenciesAccepted": "HUF",
+      "paymentAccepted": "Készpénz",
+      "award": "Arany Vállalkozás Díj"
+    })} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+

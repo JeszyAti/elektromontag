@@ -1,0 +1,58 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <svg class="footer__logo" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+        <circle cx="16" cy="16" r="15" fill="#22262b" stroke="var(--color-accent)" stroke-width="2"/>
+        <path d="M18 6L10 18h5l-1 8 8-12h-5l1-8z" fill="var(--color-accent)" />
+      </svg>
+      <span class="footer__name">Elektromontag</span>
+    </div>
+    <p class="footer__copy">
+      &copy; {currentYear} Elektromontag Autóvillamossági Szerviz. Minden jog fenntartva.
+    </p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: var(--color-primary-dark);
+    padding: var(--spacing-xl) 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+
+  .footer__brand {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+
+  .footer__name {
+    font-weight: 700;
+    color: #fff;
+    font-size: var(--font-size-base);
+  }
+
+  .footer__copy {
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  @media (max-width: 768px) {
+    .footer__inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>

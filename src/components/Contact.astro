@@ -1,0 +1,219 @@
+---
+
+---
+
+<section class="section section--contact" id="kapcsolat">
+  <div class="container">
+    <div class="section__header reveal">
+      <h2 class="section__title">Kapcsolat</h2>
+      <p class="section__subtitle">Keressen minket telefonon, vagy látogasson el műhelyünkbe!</p>
+    </div>
+
+    <div class="contact__grid reveal">
+      <div class="contact__info">
+        <!-- Phone -->
+        <div class="contact__card">
+          <div class="contact__card-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="contact__card-title">Telefonszámok</h3>
+            <a href="tel:+3612857596" class="contact__phone">+36 1 285 7596</a>
+            <span class="contact__phone-label">vezetékes</span>
+            <a href="tel:+36309624858" class="contact__phone">+36 30 9624 8584</a>
+            <span class="contact__phone-label">mobil</span>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="contact__card">
+          <div class="contact__card-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="contact__card-title">Cím</h3>
+            <p class="contact__address">1205 Budapest,<br>Mártonffy utca 46.</p>
+            <p class="contact__parking">A műhely előtt parkolási lehetőség.</p>
+          </div>
+        </div>
+
+        <!-- Hours -->
+        <div class="contact__card">
+          <div class="contact__card-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="contact__card-title">Nyitvatartás</h3>
+            <table class="contact__hours">
+              <tbody>
+                <tr>
+                  <td>Hétfő – Csütörtök</td>
+                  <td>8:00 – 17:00</td>
+                </tr>
+                <tr>
+                  <td>Péntek</td>
+                  <td>8:00 – 16:00</td>
+                </tr>
+                <tr>
+                  <td>Szombat – Vasárnap</td>
+                  <td>Zárva</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="contact__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1349.5!2d19.120346!3d47.442852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741c4a2b0d5b5b7%3A0x8662199540505083175!2sElektromontag+aut%C3%B3villamoss%C3%A1gi+szerviz!5e0!3m2!1shu!2shu!4v1"
+          width="100%"
+          height="100%"
+          style="border:0; border-radius: var(--radius-lg);"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Elektromontag elhelyezkedése a térképen"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section--contact {
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-inverse);
+  }
+
+  .section--contact .section__title {
+    color: var(--color-accent);
+  }
+
+  .section--contact .section__subtitle {
+    color: var(--color-text-inverse);
+    opacity: 0.8;
+  }
+
+  .contact__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+  }
+
+  .contact__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+  }
+
+  .contact__card {
+    display: flex;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
+  }
+
+  .contact__card-icon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(245, 158, 11, 0.15);
+    border-radius: var(--radius-md);
+    color: var(--color-accent);
+  }
+
+  .contact__card-title {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .contact__phone {
+    display: block;
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: #fff;
+    transition: color 0.2s;
+  }
+
+  .contact__phone:hover {
+    color: var(--color-accent);
+  }
+
+  .contact__phone-label {
+    display: block;
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .contact__address {
+    font-size: var(--font-size-lg);
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .contact__parking {
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: var(--spacing-xs);
+  }
+
+  .contact__hours {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .contact__hours td {
+    padding: var(--spacing-xs) 0;
+    font-size: var(--font-size-base);
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .contact__hours td:first-child {
+    padding-right: var(--spacing-xl);
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .contact__hours tr:not(:last-child) td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .contact__map {
+    min-height: 400px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+
+  .contact__map iframe {
+    min-height: 400px;
+  }
+
+  @media (max-width: 768px) {
+    .contact__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .contact__map {
+      min-height: 300px;
+    }
+
+    .contact__map iframe {
+      min-height: 300px;
+    }
+  }
+</style>
