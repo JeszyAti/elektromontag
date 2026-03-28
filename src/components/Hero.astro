@@ -179,9 +179,16 @@
       gap: var(--spacing-xl);
     }
 
-    .hero__visual {
-      display: none;
+    .hero__content {
+      display: contents;
     }
+
+    .hero__badge { order: 1; }
+    .hero__title { order: 2; }
+    .hero__visual { order: 3; }
+    .hero__description { order: 4; }
+    .hero__actions { order: 5; }
+    .hero__info { order: 6; }
 
     .hero__title {
       font-size: var(--font-size-4xl);
