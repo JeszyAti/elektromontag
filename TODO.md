@@ -12,6 +12,13 @@
 - [x] Tegező hangnem
 - [x] Git repo + GitHub: github.com/JeszyAti/elektromontag
 - [x] VPS deploy Docker konténerrel: http://72.61.95.59:8080
+- [x] Mobil telefonszám javítás: +36 30 624 8584
+- [x] Klíma szolgáltatás bővítés: régi és új típusú klímagáz info
+- [x] Ablaktörlő → Ablaktörlő és ablakmosó javítás (bővítés)
+- [x] Új szolgáltatás: Légzsák és ABS javítás
+- [x] SEO kulcsszavak bővítése: légzsák, ABS, ablakmosó, nappali menetfény, ködlámpa, duda
+- [x] Új szolgáltatás: Nappali menetfény és ködlámpa beszerelés
+- [x] Biztonsági rendszerekhez duda hozzáadva
 
 ## Deploy — domain beállítás után
 - [ ] Domain regisztráció — `elektromontag.hu`
@@ -33,9 +40,15 @@
 ```bash
 # 1. Lokálisan: buildelés és push
 npm run build && git add -A && git commit -m "Update site" && git push
+```
 
-# 2. VPS-en: Hostinger terminálban volume cleanup
+### 2. Redeploy — Hostinger API-n keresztül (Claude Code-dal)
+1. Projekt törlése: `VPS_deleteProjectV1` (virtualMachineId: 1227252, projectName: elektromontag)
+2. Új deploy: `VPS_createNewProjectV1` (content: https://github.com/JeszyAti/elektromontag)
+3. Ellenőrzés: `VPS_getActionDetailsV1`
+
+### Alternatív: Hostinger terminálból
+```bash
 docker stop elektromontag-web; docker rm elektromontag-web elektromontag-deploy; docker volume rm elektromontag_site-data elektromontag_nginx-conf
-
-# 3. Redeploy: Hostinger hPanel → Docker → elektromontag → vagy API-n keresztül
+# Majd hPanel → Docker → redeploy
 ```

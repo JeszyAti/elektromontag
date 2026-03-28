@@ -40,14 +40,16 @@ Két blokkra osztva:
 | Menetrögzítő kamera | Dashcam telepítés és bekötés |
 | Ablakemelő javítás | Elektromos ablakemelő szerkezet javítása |
 | Központi zár | Központi zár rendszer javítás és beszerelés |
-| Klímajavítás és feltöltés | Autóklíma diagnosztika, javítás, gáz feltöltés |
+| Klímajavítás és feltöltés | Autóklíma diagnosztika, javítás és feltöltés — régi és új típusú klímagázzal |
 | Szivárgás keresés | Klíma- és egyéb elektromos rendszer szivárgás felderítése |
 | Akkumulátor értékesítés és bevizsgálás | Akku tesztelés, új akkumulátor értékesítés |
 | Hibakód olvasás | Fedélzeti diagnosztika, hibakód kiolvasás és törlés |
 | Általános hibakeresés | Komplex elektromos hibák felderítése |
 | Műszaki vizsgára felkészítés | Világítás, jelzések, elektromos rendszer ellenőrzése |
-| Ablaktörlő javítás | Ablaktörlő motor és mechanika javítás |
+| Ablaktörlő és ablakmosó javítás | Ablaktörlő motor, mechanika és ablakmosó rendszer javítása |
 | Fűtőmotor javítás | Utastér fűtés/szellőzés motor javítása |
+| Légzsák, ABS és biztonsági rendszerek | Légzsák, ABS, duda és egyéb biztonsági rendszerek diagnosztikája és javítása |
+| Nappali menetfény és ködlámpa | Nappali menetfény (DRL) és ködlámpa beszerelés, javítás |
 | Vonóhorog bekötés | Utánfutó csatlakozó elektromos bekötése |
 
 **Soron kívüli (expressz) szolgáltatások** — kiemelten megjelenítve:

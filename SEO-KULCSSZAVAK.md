@@ -59,6 +59,13 @@
 | menetrögzítő kamera beszerelés | 3 |
 | fűtőmotor javítás autó Budapest | 3 |
 | ablaktörlő motor javítás | 3 |
+| ablakmosó javítás autó Budapest | 3 |
+| légzsák javítás Budapest | 2 |
+| ABS javítás Budapest | 2 |
+| autó biztonsági rendszer javítás Budapest | 2 |
+| nappali menetfény beszerelés Budapest | 2 |
+| ködlámpa beszerelés Budapest | 2 |
+| duda javítás autó Budapest | 3 |
 | műszaki vizsga felkészítés Budapest | 2 |
 
 ## Long-tail kulcsszavak (alacsonyabb verseny, könnyebb rangsorolás)
