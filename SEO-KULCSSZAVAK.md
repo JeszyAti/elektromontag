@@ -77,7 +77,7 @@
 ## Meta leírás javaslat (max 160 karakter)
 
 **Főoldal:**
-"Autóvillamossági szerviz Budapest XX. kerületében. Önindító, generátor javítás, klímafeltöltés, hibakód olvasás. 35+ év tapasztalat. Hívj: +36 30 9 624 8584"
+"Autóvillamossági szerviz Budapest XX. kerületében. Önindító, generátor javítás, klímafeltöltés, hibakód olvasás. 35+ év tapasztalat. Hívj: +36 30 624 8584"
 
 ## Beépítési javaslat
 

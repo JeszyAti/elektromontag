@@ -69,7 +69,7 @@ Két blokkra osztva:
 - 3-5 kiemelt ügyfélvélemény
 
 #### Kapcsolat
-- **Telefon:** +36 1 285 7596 (vezetékes), +36 30 9624 8584 (mobil)
+- **Telefon:** +36 1 285 7596 (vezetékes), +36 30 624 8584 (mobil)
 - **Cím:** 1205 Budapest, Mártonffy utca 46.
 - **Nyitvatartás:** H–Cs: 8:00–17:00, P: 8:00–16:00
 - Beágyazott Google Maps térkép
