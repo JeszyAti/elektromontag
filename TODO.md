@@ -19,6 +19,10 @@
 - [x] SEO kulcsszavak bővítése: légzsák, ABS, ablakmosó, nappali menetfény, ködlámpa, duda
 - [x] Új szolgáltatás: Nappali menetfény és ködlámpa beszerelés
 - [x] Biztonsági rendszerekhez duda hozzáadva
+- [x] Akkumulátor: régi aksik veszélyes hulladékként való átvétele
+- [x] Expressz klímafeltöltés: régi és új típusú klímagáz info
+- [x] Szolgáltatások átrendezése keresettség/fontosság szerint (nem ABC)
+- [x] Dokumentumok (PRD, SEO, TODO) szinkronizálása a kóddal
 
 ## Deploy — domain beállítás után
 - [ ] Domain regisztráció — `elektromontag.hu`

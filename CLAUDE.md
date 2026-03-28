@@ -39,7 +39,7 @@ Docker-based deployment on Hostinger VPS (72.61.95.59):
 - Nginx Proxy Manager on VPS handles domain routing and SSL
 - `dist/` is committed to repo (required for Docker deployment)
 
-Deploy process: build locally → push to GitHub → clean VPS volumes → redeploy via Hostinger API. See TODO.md for detailed steps.
+Deploy process: build locally → commit dist/ → push to GitHub → delete project via Hostinger API (`VPS_deleteProjectV1`, virtualMachineId: 1227252) → recreate from GitHub (`VPS_createNewProjectV1`, content: https://github.com/JeszyAti/elektromontag) → verify (`VPS_getActionDetailsV1`). See TODO.md for detailed steps.
 
 ## Key Business Data
 

@@ -30,27 +30,27 @@ Statikus bemutatkozó weboldal készítése az Elektromontag autóvillamossági 
 #### Szolgáltatások
 Két blokkra osztva:
 
-**Fő szolgáltatások:**
+**Fő szolgáltatások** (keresettség/fontosság szerint rendezve):
 | Szolgáltatás | Leírás |
 |---|---|
 | Önindító javítás | Indítómotor hibák diagnosztizálása és javítása |
 | Generátor javítás | Töltési rendszer hibák feltárása és javítása |
-| Tolatóradar és tolatókamera telepítése
-| Autóhifi | Fejegység, hangszóró, erősítő beszerelés |
-| Menetrögzítő kamera | Dashcam telepítés és bekötés |
+| Klímajavítás és feltöltés | Autóklíma diagnosztika, javítás és feltöltés — régi és új típusú klímagázzal |
+| Hibakód olvasás | Fedélzeti diagnosztika, hibakód kiolvasás és törlés |
+| Akkumulátor értékesítés | Akku tesztelés, új akkumulátor értékesítés — régi aksik veszélyes hulladékként való átvétele |
+| Légzsák, ABS és biztonsági rendszerek | Légzsák, ABS, duda és egyéb biztonsági rendszerek diagnosztikája és javítása |
 | Ablakemelő javítás | Elektromos ablakemelő szerkezet javítása |
 | Központi zár | Központi zár rendszer javítás és beszerelés |
-| Klímajavítás és feltöltés | Autóklíma diagnosztika, javítás és feltöltés — régi és új típusú klímagázzal |
-| Szivárgás keresés | Klíma- és egyéb elektromos rendszer szivárgás felderítése |
-| Akkumulátor értékesítés és bevizsgálás | Akku tesztelés, új akkumulátor értékesítés |
-| Hibakód olvasás | Fedélzeti diagnosztika, hibakód kiolvasás és törlés |
-| Általános hibakeresés | Komplex elektromos hibák felderítése |
 | Műszaki vizsgára felkészítés | Világítás, jelzések, elektromos rendszer ellenőrzése |
+| Nappali menetfény és ködlámpa | Nappali menetfény (DRL) és ködlámpa beszerelés, javítás |
+| Tolatóradar és tolatókamera | Parkolássegítő rendszerek telepítése |
+| Autóhifi | Fejegység, hangszóró, erősítő beszerelés |
+| Menetrögzítő kamera | Dashcam telepítés és bekötés |
 | Ablaktörlő és ablakmosó javítás | Ablaktörlő motor, mechanika és ablakmosó rendszer javítása |
 | Fűtőmotor javítás | Utastér fűtés/szellőzés motor javítása |
-| Légzsák, ABS és biztonsági rendszerek | Légzsák, ABS, duda és egyéb biztonsági rendszerek diagnosztikája és javítása |
-| Nappali menetfény és ködlámpa | Nappali menetfény (DRL) és ködlámpa beszerelés, javítás |
 | Vonóhorog bekötés | Utánfutó csatlakozó elektromos bekötése |
+| Szivárgás keresés | Klíma- és elektromos rendszer szivárgás felderítése |
+| Általános hibakeresés | Komplex elektromos hibák felderítése |
 
 **Soron kívüli (expressz) szolgáltatások** — kiemelten megjelenítve:
 - Izzó csere (Halogén, Led és Xenon izzók)

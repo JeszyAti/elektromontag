@@ -28,6 +28,9 @@
 | klíma feltöltés Budapest | 1 |
 | autóklíma javítás Budapest | 2 |
 | autó klíma nem hűt | 2 |
+| régi típusú klímagáz feltöltés | 2 |
+| R134a klímagáz feltöltés Budapest | 3 |
+| R1234yf klímagáz feltöltés Budapest | 3 |
 | klíma szivárgás javítás autó | 3 |
 
 ### Diagnosztika (magas keresettség)
@@ -47,6 +50,25 @@
 | autó akkumulátor vásárlás Budapest | 2 |
 | akku teszt Budapest | 3 |
 
+### Biztonsági rendszerek (légzsák, ABS, duda)
+| Kulcsszó | Prioritás |
+|---|---|
+| légzsák javítás Budapest | 2 |
+| ABS javítás Budapest | 2 |
+| autó biztonsági rendszer javítás Budapest | 2 |
+| légzsák lámpa ég Budapest | 2 |
+| ABS lámpa ég javítás Budapest | 2 |
+| duda javítás autó Budapest | 3 |
+| duda csere autó Budapest | 3 |
+
+### Világítás (nappali menetfény, ködlámpa)
+| Kulcsszó | Prioritás |
+|---|---|
+| nappali menetfény beszerelés Budapest | 2 |
+| DRL beszerelés Budapest | 3 |
+| ködlámpa beszerelés Budapest | 2 |
+| ködlámpa javítás autó Budapest | 3 |
+
 ### Egyéb szolgáltatások
 | Kulcsszó | Prioritás |
 |---|---|
@@ -60,12 +82,6 @@
 | fűtőmotor javítás autó Budapest | 3 |
 | ablaktörlő motor javítás | 3 |
 | ablakmosó javítás autó Budapest | 3 |
-| légzsák javítás Budapest | 2 |
-| ABS javítás Budapest | 2 |
-| autó biztonsági rendszer javítás Budapest | 2 |
-| nappali menetfény beszerelés Budapest | 2 |
-| ködlámpa beszerelés Budapest | 2 |
-| duda javítás autó Budapest | 3 |
 | műszaki vizsga felkészítés Budapest | 2 |
 
 ## Long-tail kulcsszavak (alacsonyabb verseny, könnyebb rangsorolás)
@@ -80,6 +96,14 @@
 - "autó elektromos hiba javítás Budapest"
 - "izzó csere szerviz Budapest"
 - "autó biztosíték csere Budapest"
+- "légzsák lámpa világít javítás Pesterzsébet"
+- "ABS lámpa ég javítás 20. kerület"
+- "nappali menetfény beszerelés Pesterzsébet"
+- "ködlámpa csere Budapest XX. kerület"
+- "autó duda nem működik javítás Budapest"
+- "régi típusú klímagáz feltöltés Budapest"
+- "klímafeltöltés régi és új gázzal Budapest"
+- "veszélyes hulladék akkumulátor átvétel Budapest"
 
 ## Meta leírás javaslat (max 160 karakter)
 
