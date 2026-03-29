@@ -69,6 +69,16 @@
 | ködlámpa beszerelés Budapest | 2 |
 | ködlámpa javítás autó Budapest | 3 |
 
+### Riasztó és lopásgátló (egész évben keresett)
+| Kulcsszó | Prioritás |
+|---|---|
+| riasztó beszerelés autó Budapest | 2 |
+| lopásgátló beszerelés Budapest | 2 |
+| autóriasztó szerelés Budapest | 2 |
+| indításgátló beszerelés Budapest | 2 |
+| autó riasztó kiszerelés Budapest | 3 |
+| rejtett kapcsoló beszerelés autó | 3 |
+
 ### Egyéb szolgáltatások
 | Kulcsszó | Prioritás |
 |---|---|
@@ -104,6 +114,9 @@
 - "régi típusú klímagáz feltöltés Budapest"
 - "klímafeltöltés régi és új gázzal Budapest"
 - "veszélyes hulladék akkumulátor átvétel Budapest"
+- "riasztó beszerelés autó Pesterzsébet"
+- "lopásgátló szerelés Budapest XX. kerület"
+- "indításgátló beszerelés autóvillamosság Budapest"
 
 ## Meta leírás javaslat (max 160 karakter)
 

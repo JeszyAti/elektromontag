@@ -23,6 +23,8 @@
 - [x] Expressz klímafeltöltés: régi és új típusú klímagáz info
 - [x] Szolgáltatások átrendezése keresettség/fontosság szerint (nem ABC)
 - [x] Dokumentumok (PRD, SEO, TODO) szinkronizálása a kóddal
+- [x] Új szolgáltatás: Riasztó és lopásgátlók (be- és kiszerelés, rejtett kapcsoló, indításgátló)
+- [x] SEO kulcsszavak bővítése: riasztó, lopásgátló, indításgátló, rejtett kapcsoló
 
 ## Deploy — domain beállítás után
 - [ ] Domain regisztráció — `elektromontag.hu`
